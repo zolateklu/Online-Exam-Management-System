@@ -38,7 +38,7 @@ CREATE TABLE `adminlogin` (
 --
 
 INSERT INTO `adminlogin` (`id`, `password`, `name`) VALUES
-('jerry', 'jerry', 'jerry T.');
+('tom', 'tom', 'Tom T.');
 
 -- --------------------------------------------------------
 
@@ -65,8 +65,8 @@ CREATE TABLE `alreadyloggedin` (
 --
 
 INSERT INTO `alreadyloggedin` (`fname`, `lname`, `student_id`, `course`, `type`, `year`, `semister`, `phone`, `email`, `gender`, `datetime`) VALUES
-('mestawet', 'deresse', '7592749812', 'Discrete Maths', 'quiz', 2, 1, '251912786017', 'mestawetderesse91@gmail.c', 'Female', '2020-07-11 10:19:33'),
-('zelalem', 'teklu', '2409592325', 'Discrete Maths', 'quiz', 2, 1, '251923407002', 'zolateklu@gmail.com', 'Male', '2020-07-10 19:54:39');
+('john', 'doe', '7592749812', 'Discrete Maths', 'quiz', 2, 1, '251900000000', 'john@gmail.co', 'Female', '2020-07-11 10:19:33'),
+('zelalem', 'teklu', '2409592325', 'Discrete Maths', 'quiz', 2, 1, '251923000000', 'zolateklu@github.com', 'Male', '2020-07-10 19:54:39');
 
 -- --------------------------------------------------------
 
@@ -209,9 +209,9 @@ CREATE TABLE `instructor` (
 --
 
 INSERT INTO `instructor` (`ins_id`, `name`, `phone`, `password`, `email`, `country`, `gender`, `course_name`, `dep_name`) VALUES
-(94972132, 'jerry teklu', '0923407002', 'jerry', 'jerryeklu@gmail.com', 'ethiopian', 'Female', 'Discrete Maths', 'Computer Science'),
-(531927190, 'zelalem teklu', '251923407002', 'zola', 'zolateklu@gmail.com', 'ethiopian', 'Male', 'Management', 'BUMA'),
-(2147483647, 'zelalem teklu', '0978766788', 'zola', 'zolateklu@gmail.com', 'ethiopian', 'Male', 'Graphics Design', 'Computer Science');
+(94972132, 'tom john', '0923400000', 'tom', 'tomjo@gmail.com', 'ethiopian', 'Female', 'Discrete Maths', 'Computer Science'),
+(531927190, 'zelalem teklu', '251923401111', 'zola', 'zolateklu@github.com', 'ethiopian', 'Male', 'Management', 'BUMA'),
+(2147483647, 'doe john', '0916999999', 'zola', 'doe@github.com', 'ethiopian', 'Male', 'Graphics Design', 'Computer Science');
 
 -- --------------------------------------------------------
 
@@ -271,8 +271,8 @@ CREATE TABLE `results` (
 --
 
 INSERT INTO `results` (`student_id`, `fname`, `lname`, `phone`, `email`, `gender`, `course`, `type`, `year`, `semister`, `no_of_questions`, `marks`, `percentage`) VALUES
-('7592749812', 'mestawet', 'deresse', '251912786017', 'mestawetderesse91@gmail.c', 'Female', 'Discrete Maths', 'quiz', 2, 1, 3, 0, 0),
-('2409592325', 'zelalem', 'teklu', '251923407002', 'zolateklu@gmail.com', 'Male', 'Discrete Maths', 'quiz', 2, 1, 3, 3, 100);
+('7592749812', 'doe', 'didi', '251911111111', 'didi@github.io', 'Female', 'Discrete Maths', 'quiz', 2, 1, 3, 0, 0),
+('2409592325', 'zelalem', 'doe', '251923333333', 'zola@github.io', 'Male', 'Discrete Maths', 'quiz', 2, 1, 3, 3, 100);
 
 -- --------------------------------------------------------
 
@@ -301,11 +301,11 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`fname`, `lname`, `stuid`, `phone`, `password`, `email`, `country`, `gender`, `dep_name`, `c_c_id`, `year`, `semister`, `status`) VALUES
-('zelalem', 'teklu', '2409592325', '251923407002', 'zola', 'zolateklu@gmail.com', 'ethiopian', 'Male', 'Computer Science', 1, 2, 1, 1),
-('jerry', 'teklu', '4077428000', '0912040730', 'jerry', 'jerryteklu@yahoo.com', 'ethiopian', 'Female', 'BUMA', 1, 2, 1, 1),
-('haymanot', 'negase', '4557174508', '251942575704', '1234', 'haymanotnegash85@gmail.com', 'ethiopian', 'Female', 'Computer Science', 2, 1, 2, 1),
-('ebise', 'alemayehu', '5744498212', '251917272897', '1234', 'ebise231@gmail.com', 'ethiopian', 'Female', 'Computer Science', 1, 5, 2, 1),
-('mestawet', 'deresse', '7592749812', '251912786017', '1234', 'mestawetderesse91@gmail.com', 'ethiopian', 'Female', 'Computer Science', 1, 2, 1, 1);
+('zelalem', 'github', '2409592325', '251923090909', 'zola', 'zolateklu@github.io', 'ethiopian', 'Male', 'Computer Science', 1, 2, 1, 1),
+('tom', 'doe', '4077428000', '0912090909', 'tom', 'tom@yahoo.com', 'ethiopian', 'Female', 'BUMA', 1, 2, 1, 1),
+('john', 'negi', '4557174508', '251942090909', '1234', 'negi@gmail.com', 'ethiopian', 'Male', 'Computer Science', 2, 1, 2, 1),
+('doe', 'alex', '5744498212', '251917090909', '1234', 'alex@gmail.com', 'ethiopian', 'Female', 'Computer Science', 1, 5, 2, 1),
+('kiki', 'doe', '7592749812', '251912090909', '1234', 'kiki@gmail.com', 'ethiopian', 'Female', 'Computer Science', 1, 2, 1, 1);
 
 --
 -- Indexes for dumped tables
